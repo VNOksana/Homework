@@ -14,25 +14,30 @@ a {
 
 body {
     font-family: "Montserrat", sans-serif;
+    max-width: 1440px;
 }
 
 button {
     cursor: pointer;
-
-  }
+}
 
 
 .header {
     background: #E1FF8F;
-    background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
-    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 230% -330px;
+    background-image: url(img/star1.png), url(img/star2.png);
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px);
     background-repeat: no-repeat;
+    border-width: 1px;
 }
 
+.starbig {
+    position: absolute;
+    z-index: 1;
+    left: 850px;
+}
 
-.header__house{
+.header__house {
     color: #202027;
-    font-family: Montserrat;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -44,7 +49,6 @@ button {
 
 .header__text {
     color: #202027;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -55,7 +59,6 @@ button {
 
 .header__text_weight {
     color: #202027;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -77,6 +80,19 @@ button {
     font-family: "Montserrat";
 }
 
+.button__go:hover {
+    background-color: #FFF;
+    border: 1px solid #202027;
+    color: #202027;
+}
+
+.sc {
+    max-width: 1440px;
+    position: absolute;
+    background: rgb(188, 236, 48);
+    overflow: hidden;
+}
+
 .scrollbar {
     width: 3220px;
     height: 90px;
@@ -84,22 +100,20 @@ button {
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
-    background: rgb(188, 236, 48);
     flex-wrap: wrap;
-    overflow: hidden;
     max-height: 87px;
+    animation: marquee 30s linear infinite;
 }
 
 .scrollbar__text {
-    font-family: "Montserrat";
     color: rgb(32, 32, 39);
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     padding-right: 51px;
     padding-left: 51px;
-}
 
+}
 
 .games__container {
     display: flex;
@@ -113,22 +127,19 @@ button {
 
 .games {
     color: #FFF;
-    font-family: Montserrat;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding-top: 94px;
-    
 }
 
 .games__text {
     color: #FFF;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px; 
+    line-height: 32px;
     max-width: 788px;
 }
 
@@ -146,16 +157,13 @@ button {
     display: flex;
     flex-direction: column;
     grid-column: span 4;
-    background-color: #FFFFFF ;
+    background-color: #FFFFFF;
     border-radius: 30px;
 }
 
 .img__item {
     border-radius: 30px;
     height: 314px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .img__card_top {
@@ -165,19 +173,24 @@ button {
 .img__item_1 {
     background: url(img/card1.svg);
 }
+
 .img__item_2 {
     background: url(img/card2.svg);
 }
-.img__item_3{
+
+.img__item_3 {
     background: url(img/card3.svg);
 }
-.img__item_4{
+
+.img__item_4 {
     background: url(img/card4.svg);
 }
-.img__item_5{
+
+.img__item_5 {
     background: url(img/card5.svg);
 }
-.img__item_6{
+
+.img__item_6 {
     background: url(img/card6.svg);
 }
 
@@ -207,5 +220,34 @@ button {
     font-weight: 700;
     text-align: left;
     padding: 0 36px 32px;
-    max-width: 372px;
+    max-width: 306px;
+}
+
+.footer {
+    background: #BDED35;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+.footer__text {
+    display: flex;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 61px;
+    opacity: 1;
+    left: 578px;
+
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(40%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
