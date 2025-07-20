@@ -24,16 +24,10 @@ button {
 
 .header {
     background: #E1FF8F;
-    background-image: url(img/star1.png), url(img/star2.png);
-    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px);
+    background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), right;
     background-repeat: no-repeat;
     border-width: 1px;
-}
-
-.starbig {
-    position: absolute;
-    z-index: 1;
-    left: 850px;
 }
 
 .header__house {
