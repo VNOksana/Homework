@@ -18,9 +18,7 @@ body {
 
 button {
     cursor: pointer;
-
-  }
-
+}
 
 .header {
     background: #E1FF8F;
@@ -30,7 +28,7 @@ button {
 }
 
 
-.header__house{
+.header__house {
     color: #202027;
     font-family: Montserrat;
     font-size: 64px;
@@ -119,7 +117,7 @@ button {
     font-weight: 700;
     line-height: normal;
     padding-top: 94px;
-    
+
 }
 
 .games__text {
@@ -128,7 +126,7 @@ button {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px; 
+    line-height: 32px;
     max-width: 788px;
 }
 
@@ -146,7 +144,7 @@ button {
     display: flex;
     flex-direction: column;
     grid-column: span 4;
-    background-color: #FFFFFF ;
+    background-color: #FFFFFF;
     border-radius: 30px;
 }
 
@@ -165,19 +163,24 @@ button {
 .img__item_1 {
     background: url(img/card1.svg);
 }
+
 .img__item_2 {
     background: url(img/card2.svg);
 }
-.img__item_3{
+
+.img__item_3 {
     background: url(img/card3.svg);
 }
-.img__item_4{
+
+.img__item_4 {
     background: url(img/card4.svg);
 }
-.img__item_5{
+
+.img__item_5 {
     background: url(img/card5.svg);
 }
-.img__item_6{
+
+.img__item_6 {
     background: url(img/card6.svg);
 }
 
