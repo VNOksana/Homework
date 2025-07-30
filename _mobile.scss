@@ -73,6 +73,81 @@
         display: none;
     }
 
+
+    .games {
+
+        &__star--1,
+        &__star--2,
+        &__star--3,
+        &__star--4 {
+            display: none;
+        }
+
+        &__title {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            padding-bottom: 48px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+        }
+
+        &__content {
+            padding-left: 29px;
+            padding-right: 29px;
+            padding-top: 29px;
+        }
+
+        &__br {
+            display: none;
+        }
+
+        &__img {
+            max-width: 100%;
+        }
+
+        &__item-title {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            max-width: 233px;
+        }
+
+        &__item-text {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            max-width: 233px;
+        }
+
+        &__sbtn {
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 32px;
+            max-width: 285px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
     .footer {
         background: #BDED35;
         background-repeat: no-repeat;

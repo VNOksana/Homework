@@ -221,6 +221,114 @@ button {
     max-width: 300px;
 }
 
+.games {
+    background-color: #202027;
+    padding-bottom: 112px;
+}
+
+.games__star--1 {
+    position: absolute;
+    top: 2363px;
+    right: 124px;
+}
+
+.games__star--2 {
+    position: absolute;
+    top: 2396px;
+    right: 45px;
+}
+
+.games__star--3 {
+    position: absolute;
+    top: 5684px;
+    right: 150px;
+}
+
+.games__star--4 {
+    position: absolute;
+    top: 5636px;
+    right: 52px;
+}
+
+.games__cont {
+    padding-top: 46px;
+}
+
+.games__title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78.02px;
+    letter-spacing: 0px;
+    padding-bottom: 72px;
+    color: #ffffff;
+}
+
+.games__item {
+    background-color: #ffffff;
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 30px;
+}
+
+.games__item:hover {
+    transform: scale(1.08);
+    transition: 1s;
+}
+
+.games__imgrevers {
+    flex-direction: row-reverse;
+}
+
+.games__content--right {
+    padding-right: 48px;
+}
+
+.games__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 48px;
+    padding-top: 48px;
+}
+
+.games__item-title {
+    color: rgb(32, 32, 39);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    padding-bottom: 24px;
+    width: 504px;
+}
+
+.games__item-text {
+    color: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 36px;
+    width: 500px;
+}
+
+.games__sbtn {
+    width: 247px;
+    height: 66px;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+.games .games__brm {
+    display: none;
+}
+
 .footer {
     background: #BDED35;
     background-repeat: no-repeat;
@@ -324,6 +432,73 @@ button {
         display: none;
     }
 
+
+    .games__star--1, .games__star--2, .games__star--3, .games__star--4 {
+        display: none;
+    }
+
+    .games__title {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        padding-bottom: 48px;
+    }
+
+    .games__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    .games__content {
+        padding-left: 29px;
+        padding-right: 29px;
+        padding-top: 29px;
+    }
+
+    .games__br {
+        display: none;
+    }
+
+    .games__img {
+        max-width: 100%;
+    }
+
+    .games__item-title {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        max-width: 233px;
+    }
+
+    .games__item-text {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        max-width: 233px;
+    }
+
+    .games__sbtn {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 142%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 32px;
+        max-width: 285px;
+        flex-direction: row;
+    }
+
     .footer {
         background: #BDED35;
         background-repeat: no-repeat;
@@ -347,6 +522,82 @@ button {
         padding-left: 24px;
         padding-right: 24px;
     }
+
+    .games__title {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        padding-bottom: 48px;
+    }
+
+    .games__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        align-items: stretch;
+    }
+
+    .games__content {
+        padding-left: 29px;
+        padding-right: 29px;
+        padding-top: 29px;
+
+    }
+
+    .games__br {
+        display: none;
+    }
+
+    .games__img {
+        max-width: 100%;
+    }
+
+    .games__item-title {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        max-width: 233px;
+    }
+
+    .games__item-text {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        max-width: 500px;
+    }
+
+    .games__sbtn {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 142%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 32px;
+        max-width: 285px;
+    }
+
+    .footer {
+        background: #BDED35;
+        background-repeat: no-repeat;
+        height: 100px;
+    }
+
+    .footer__text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
 }
+
 
 /*# sourceMappingURL=style.css.map */
