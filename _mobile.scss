@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: calc(50% - 375px);
+        padding-right: calc(50% - 375px);
     }
 
     .header {
