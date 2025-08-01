@@ -11,14 +11,18 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
 </head>
 
 <body>
     <header class="header center">
-        <h1 class="header__house">Добро пожаловать на мой сайт мини-игр</h1>
-        <p class="header__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
-                class="header__text_weight">«Поехали!»</span> и <span class="header__text_weight">приступай.</span></p>
-        <button class="button__go" type="submit" href="#Об_играх">Поехали!</button>
+        <div class="header__content">
+            <h1 class="header__house">Добро пожаловать на мой сайт мини-игр</h1>
+            <p class="header__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
+                    class="header__text_weight">«Поехали!»</span> и <span class="header__text_weight">приступай.</span>
+            </p>
+            <button class="button__go" type="submit" id="Об_играх">Поехали!</button>
+        </div>
     </header>
     <div class="sc">
         <div class="scrollbar">
@@ -55,7 +59,7 @@
         </div>
     </div>
     <section class="games__container center">
-        <h2 class="games" id="Об_играх">Об играх</h2>
+        <h2 class="games">"Об_играх"</h2>
         <p class="games__text">В моей коллекции представлено 6 игр на разные темы.
             Игры несложные — в них может поиграть каждый.
             Все игры доступны для пользования.</p>
@@ -92,9 +96,115 @@
             </a>
         </div>
     </section>
+    <section class="games center">
+        <img class="games__star games__star--1" src="img/Blackstar1.png" alt="blackstar" />
+        <img class="games__star games__star--2" src="img/Blackstar2.png" alt="blackstar" />
+        <img class="games__star games__star--3" src="img/Blackstar3.png" alt="blackstar" />
+        <img class="games__star games__star--4" src="img/Blackstar4.png" alt="blackstar" />
+        <div class="games__cont">
+            <h3 class="games__title">Мини-игры</h3>
+            <div class="games__box">
+
+
+
+                <article class="games__item games__item--1 games__imgrevers">
+                    <img class="games__img" src="img/games1.png" alt="" />
+                    <div class="games__content">
+                        <div>
+                            <h3 class="games__item-title">Угадай число</h3>
+                            <p class="games__item-text">Попробуй угадать случайное<br />число от 1 до 100.</p>
+                        </div>
+                        <button class="games__sbtn">Играть!</button>
+                    </div>
+                </article>
+
+
+
+
+                <article class="games__item games__item--2">
+                    <img class="games__img" src="img/games2.png" alt="" />
+                    <div class="games__content games__content--right">
+                        <div>
+                            <h3 class="games__item-title">Простая<br class="games__brm" /> арифметика</h3>
+                            <p class="games__item-text">Попробуй решить простые<br class="games__brt" />арифметические
+                                задачи.</p>
+                        </div>
+                        <button class="games__sbtn">Играть!</button>
+                    </div>
+                </article>
+
+
+                <article class="games__item games__item--3 games__imgrevers">
+                    <img class="games__img" src="img/games3.png" alt="" />
+                    <div class="games__content">
+                        <div>
+                            <h3 class="games__item-title">
+                                Переверни <br class="games__brm" />текст
+                            </h3>
+                            <p class="games__item-text">
+                                Попробуй ввести текст, который<br />будет перевернут.
+                            </p>
+                        </div>
+                        <button class="games__sbtn">Играть!</button>
+                    </div>
+                </article>
+
+
+                <article class="games__item games__item--5">
+                    <img class="games__img" src="img/games5.png" alt="" />
+                    <div class="games__content">
+                        <div>
+                            <h3 class="games__item-title">
+                                Камень,<br />ножницы,<br />бумага
+                            </h3>
+                            <p class="games__item-text">
+                                Сыграй в популярную игру<br />
+                                против компьютера.
+                            </p>
+                        </div>
+                        <button class="games__sbtn">Играть!</button>
+                    </div>
+                </article>
+
+
+                <article class="games__item games__item--4 games__imgrevers">
+                    <img class="games__img" src="img/games4.png" alt="" />
+                    <div class="games__content games__content--right">
+                        <div>
+                            <h3 class="games__item-title">Простая Викторина</h3>
+                            <p class="games__item-text">
+                                Отвечай на вопросы викторины<br />
+                                с вариантами ответов.
+                            </p>
+                        </div>
+                        <button class="games__sbtn">Играть!</button>
+                    </div>
+                </article>
+                <article class="games__item games__item--6">
+                    <img class="games__img" src="img/games6.png" alt="" />
+                    <div class="games__content games__content--right">
+                        <div>
+                            <h3 class="games__item-title">
+                                Генератор<br> <br class="games__brm" />
+                                случайных <br> <br class="games__brm" />
+                                цветов
+                            </h3>
+                            <p class="games__item-text">
+                                Игра, в которой при клике<br class="games__brm" />
+                                на кнопку<br class="games__br" />
+                                фон страницы <br class="games__brm" />меняется на случайный.
+                            </p>
+                        </div>
+                        <button class="games__sbtn">Играть!</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
     <div class="footer">
         <h1 class="footer__text">Все права защищены</h1>
     </div>
+    <script src="hw-2.js"></script>
 </body>
 
 </html>
