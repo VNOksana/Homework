@@ -1,5 +1,5 @@
 //
-// Вопрос 1 //
+// Вопрос 1! //
 let password = 'пароль';
 let askPassword = prompt('Введите пароль')
 
