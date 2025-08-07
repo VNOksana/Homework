@@ -64,7 +64,7 @@
             Игры несложные — в них может поиграть каждый.
             Все игры доступны для пользования.</p>
         <div class="img__games">
-            <a class="img__card" href="#">
+            <a class="img__card" href="#namber">
                 <div class="img__item img__item_1"></div>
                 <div class="img__number">Игра № 1</div>
                 <div class="img__text">Угадай число</div>
@@ -104,14 +104,14 @@
         <div class="games__cont">
             <h3 class="games__title">Мини-игры</h3>
             <div class="games__box">
-                <article class="games__item games__item--1 games__imgrevers">
+                <article class="games__item games__item--1 games__imgrevers" id="namber">
                     <img class="games__img" src="img/games1.png" alt="" />
                     <div class="games__content">
-                        <div>
+                        <div class="games__item-info">
                             <h3 class="games__item-title">Угадай число</h3>
                             <p class="games__item-text">Попробуй угадать случайное число от 1 до 100.</p>
                         </div>
-                        <button class="games__sbtn">Играть!</button>
+                        <button class="games__sbtn" onclick="guessNumberGame()">Играть!</button>
                     </div>
                 </article>
                 <article class="games__item games__item--2">
@@ -186,14 +186,16 @@
                         </div>
                         <button class="games__sbtn">Играть!</button>
                     </div>
-                </article> 
+                </article>
             </div>
         </div>
     </section>
     <div class="footer">
         <h1 class="footer__text">Все права защищены</h1>
     </div>
-    <script src="hw-2.js"></script>
+
+    <script src="hw-4.js"></script>
+    <script src="game-1.js"></script>
 </body>
 
 </html>
