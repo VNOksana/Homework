@@ -64,32 +64,32 @@
             Игры несложные — в них может поиграть каждый.
             Все игры доступны для пользования.</p>
         <div class="img__games">
-            <a class="img__card" href="#namber">
+            <a class="img__card" href="#">
                 <div class="img__item img__item_1"></div>
                 <div class="img__number">Игра № 1</div>
                 <div class="img__text">Угадай число</div>
             </a>
-            <a class="img__card" href="#aritmetic">
+            <a class="img__card" href="#">
                 <div class="img__item img__item_2"></div>
                 <div class="img__number">Игра № 2</div>
                 <div class="img__text">Простая арифметика</div>
             </a>
-            <a class="img__card" href="#text">
+            <a class="img__card" href="#">
                 <div class="img__item img__item_3"></div>
                 <div class="img__number">Игра № 3</div>
                 <div class="img__text">Переверни текст</div>
             </a>
-            <a class="img__card img__card_top" href="#stone">
+            <a class="img__card img__card_top" href="#">
                 <div class="img__item img__item_4"></div>
                 <div class="img__number">Игра № 4</div>
                 <div class="img__text">Камень, ножницы, бумага</div>
             </a>
-            <a class="img__card" href="#quizzes">
+            <a class="img__card" href="#">
                 <div class="img__item img__item_5"></div>
                 <div class="img__number">Игра № 5</div>
                 <div class="img__text">Простая викторина</div>
             </a>
-            <a class="img__card img__card_top" href="#color">
+            <a class="img__card img__card_top" href="#">
                 <div class="img__item img__item_6"></div>
                 <div class="img__number">Игра № 6</div>
                 <div class="img__text">Генератор случайных цветов</div>
@@ -104,17 +104,24 @@
         <div class="games__cont">
             <h3 class="games__title">Мини-игры</h3>
             <div class="games__box">
-                <article class="games__item games__item--1 games__imgrevers" id="namber">
+
+
+
+                <article class="games__item games__item--1 games__imgrevers">
                     <img class="games__img" src="img/games1.png" alt="" />
                     <div class="games__content">
-                        <div class="games__item-info">
+                        <div>
                             <h3 class="games__item-title">Угадай число</h3>
-                            <p class="games__item-text">Попробуй угадать случайное число от 1 до 100.</p>
+                            <p class="games__item-text">Попробуй угадать случайное<br />число от 1 до 100.</p>
                         </div>
-                        <button class="games__sbtn" onclick="guessNumberGame()">Играть!</button>
+                        <button class="games__sbtn">Играть!</button>
                     </div>
                 </article>
-                <article class="games__item games__item--2" id="aritmetic">
+
+
+
+
+                <article class="games__item games__item--2">
                     <img class="games__img" src="img/games2.png" alt="" />
                     <div class="games__content games__content--right">
                         <div>
@@ -125,7 +132,9 @@
                         <button class="games__sbtn">Играть!</button>
                     </div>
                 </article>
-                <article class="games__item games__item--3 games__imgrevers" id="text">
+
+
+                <article class="games__item games__item--3 games__imgrevers">
                     <img class="games__img" src="img/games3.png" alt="" />
                     <div class="games__content">
                         <div>
@@ -141,7 +150,7 @@
                 </article>
 
 
-                <article class="games__item games__item--5" id="stone">
+                <article class="games__item games__item--5">
                     <img class="games__img" src="img/games5.png" alt="" />
                     <div class="games__content">
                         <div>
@@ -158,7 +167,7 @@
                 </article>
 
 
-                <article class="games__item games__item--4 games__imgrevers" id="quizzes">
+                <article class="games__item games__item--4 games__imgrevers">
                     <img class="games__img" src="img/games4.png" alt="" />
                     <div class="games__content games__content--right">
                         <div>
@@ -171,7 +180,7 @@
                         <button class="games__sbtn">Играть!</button>
                     </div>
                 </article>
-                <article class="games__item games__item--6" id="color">
+                <article class="games__item games__item--6">
                     <img class="games__img" src="img/games6.png" alt="" />
                     <div class="games__content games__content--right">
                         <div>
@@ -181,7 +190,9 @@
                                 цветов
                             </h3>
                             <p class="games__item-text">
-                                Игра, в которой при клике на кнопку фон страницы меняется на случайный.
+                                Игра, в которой при клике<br class="games__brm" />
+                                на кнопку<br class="games__br" />
+                                фон страницы <br class="games__brm" />меняется на случайный.
                             </p>
                         </div>
                         <button class="games__sbtn">Играть!</button>
@@ -193,9 +204,7 @@
     <div class="footer">
         <h1 class="footer__text">Все права защищены</h1>
     </div>
-
-    <script src="hw-4.js"></script>
-    <script src="game-1.js"></script>
+    <script src="hw-2.js"></script>
 </body>
 
 </html>
