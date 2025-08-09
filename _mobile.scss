@@ -114,11 +114,6 @@
 
     }
 
-    .games__content {
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 29px;
-    }
 
     .games__br {
         display: none;
@@ -149,18 +144,11 @@
     }
 
     .games__sbtn {
-        font-family: Montserrat;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 142%;
-        letter-spacing: 0%;
-        text-align: center;
-        margin-bottom: 32px;
-        max-width: 285px;
-        flex-direction: row;
+        height: 55px;
+        padding-left: 29px;
+        padding-right: 29px;
+        width: 262px;
     }
-
-    .games__sbtn {}
 
     .footer {
         background: #BDED35;
