@@ -506,6 +506,9 @@ button {
     margin-bottom: 32px;
     width: 284px;
   }
+  .games__content--right {
+    padding-right: 0px;
+  }
   .games {
     padding-top: 0px;
   }
@@ -642,6 +645,9 @@ button {
   }
   .games__container {
     display: none;
+  }
+  .games__content--right {
+    padding-right: 0px;
   }
   .games {
     padding-top: 0px;
