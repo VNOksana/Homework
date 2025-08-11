@@ -529,9 +529,12 @@ button {
 
     .games__content {
         padding-left: 15px;
-        padding-right: 29px;
         margin-bottom: 32px;
         width: 284px;
+    }
+
+    .games__content--right {
+        padding-right: 0px;
     }
 
     .games {
@@ -608,5 +611,5 @@ button {
 }
 
 @import 'mobile';
-
+@import 'tablet';
 /*# sourceMappingURL=style.css.map */
