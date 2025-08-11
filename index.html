@@ -71,7 +71,7 @@
                     <div class="img__text">Угадай число</div>
                 </div>
             </a>
-            <a class="img__card" href="#arithmetic">
+            <a class="img__card" href="#game2">
                 <div class="img__item img__item_2"></div>
                 <div class="img__number">Игра № 2</div>
                 <div class="img__text">Простая арифметика</div>
@@ -115,17 +115,17 @@
                     </div>
                 </a>
             </div>
-            <article class="games__item games__item--2" id="arthmetic">
-                <img class="games__img" src="img/games2.png" alt="" />
+            <a class="games__item games__item--2" id="game2" href="#">
+                <img class="games__img" src="img/games2.png" alt="Арифметика">
                 <div class="games__content games__content--right">
-                    <div>
+                    <div class="games__content">
                         <h3 class="games__item-title">Простая<br class="games__brm" /> арифметика</h3>
                         <p class="games__item-text">Попробуй решить простые<br class="games__brt" />арифметические
                             задачи.</p>
-                        <button class="games__sbtn">Играть!</button>
+                        <button onclick="simpleArithmetic()" type="submit" class="games__sbtn">Играть!</button>
                     </div>
                 </div>
-            </article>
+            </a>
             <article class="games__item games__item--3 games__imgrevers" id="text">
                 <img class="games__img" src="img/games3.png" alt="" />
                 <div class="games__content">
@@ -195,8 +195,10 @@
     <div class="footer">
         <h1 class="footer__text">Все права защищены</h1>
     </div>
-    <script src="hw-1.js"></script>
+    <script src="hw-5.js"></script>
     <script src="guessNumber.js"></script>
+    <script src="simpleArithmetic.js"></script>
+
 </body>
 
 
