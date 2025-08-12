@@ -21,7 +21,7 @@
             <p class="header__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
                     class="header__text_weight">«Поехали!»</span> и <span class="header__text_weight">приступай.</span>
             </p>
-            <button class="button__go" type="submit" id="Об_играх">Поехали!</button>
+            <a href="#about-game"><button class="button__go" type="submit">Поехали!</button></a>
         </div>
     </header>
     <div class="sc">
@@ -59,10 +59,12 @@
         </div>
     </div>
     <section class="games__container center">
-        <h2 id="about-game" class="games">"Об_играх"</h2>
-        <p class="games__text">В моей коллекции представлено 6 игр на разные темы.
-            Игры несложные — в них может поиграть каждый.
-            Все игры доступны для пользования.</p>
+        <section class="about">
+            <h2 id="about-game" class="games">"Об_играх"</h2>
+            <p class="games__text">В моей коллекции представлено 6 игр на разные темы.
+                Игры несложные — в них может поиграть каждый.
+                Все игры доступны для пользования.</p>
+        </section>
         <div class="img__games">
             <a class="img__card" href="#game1">
                 <div class="img__item img__item_1"></div>
@@ -71,7 +73,7 @@
                     <div class="img__text">Угадай число</div>
                 </div>
             </a>
-            <a class="img__card" href="#game2">
+            <a class="img__card" href="#arithmetic">
                 <div class="img__item img__item_2"></div>
                 <div class="img__number">Игра № 2</div>
                 <div class="img__text">Простая арифметика</div>
@@ -106,7 +108,7 @@
         <div class="games__cont">
             <h3 id="mini-game" class="games__title">Мини-игры</h3>
             <div class="games__box">
-                <a class="games__item games__item--1 games__imgrevers" id="game1" href="#">
+                <a class="games__item games__item--1 games__imgrevers" id="game1">
                     <img class="games__img" src="img/games1.png" alt="Числа">
                     <div class="games__content">
                         <h3 class="games__item-title">Угадай число</h3>
@@ -115,28 +117,24 @@
                     </div>
                 </a>
             </div>
-            <a class="games__item games__item--2" id="game2" href="#">
-                <img class="games__img" src="img/games2.png" alt="Арифметика">
+            <article class="games__item games__item--2" id="arthmetic">
+                <img class="games__img" src="img/games2.png" alt="" />
                 <div class="games__content games__content--right">
-                    <div class="games__content">
+                    <div>
                         <h3 class="games__item-title">Простая<br class="games__brm" /> арифметика</h3>
                         <p class="games__item-text">Попробуй решить простые<br class="games__brt" />арифметические
                             задачи.</p>
                         <button onclick="simpleArithmetic()" type="submit" class="games__sbtn">Играть!</button>
                     </div>
                 </div>
-            </a>
+            </article>
             <article class="games__item games__item--3 games__imgrevers" id="text">
                 <img class="games__img" src="img/games3.png" alt="" />
                 <div class="games__content">
                     <div>
-                        <h3 class="games__item-title">
-                            Переверни <br class="games__brm" />текст
-                        </h3>
-                        <p class="games__item-text">
-                            Попробуй ввести текст, который<br />будет перевернут.
-                        </p>
-                        <button class="games__sbtn">Играть!</button>
+                        <h3 class="games__item-title">Переверни <br class="games__brm" />текст</h3>
+                        <p class="games__item-text">Попробуй ввести текст, который<br />будет перевернут.</p>
+                        <button onclick="turnOverText()" type="submit" class="games__sbtn">Играть!</button>
                     </div>
                 </div>
             </article>
@@ -146,14 +144,9 @@
                 <img class="games__img" src="img/games5.png" alt="" />
                 <div class="games__content">
                     <div>
-                        <h3 class="games__item-title">
-                            Камень,<br />ножницы,<br />бумага
-                        </h3>
-                        <p class="games__item-text">
-                            Сыграй в популярную игру<br />
-                            против компьютера.
-                        </p>
-                        <button class="games__sbtn">Играть!</button>
+                        <h3 class="games__item-title">Камень,<br />ножницы,<br />бумага</h3>
+                        <p class="games__item-text">Сыграй в популярную игру<br />против компьютера.</p>
+                        <button onclick="()" type="submit" class="games__sbtn">Играть!</button>
                     </div>
                 </div>
             </article>
@@ -168,7 +161,7 @@
                             Отвечай на вопросы викторины<br />
                             с вариантами ответов.
                         </p>
-                        <button class="games__sbtn">Играть!</button>
+                        <button onclick="simpleQuizGame()" type="submit" class="games__sbtn">Играть!</button>
                     </div>
                 </div>
             </article>
@@ -195,10 +188,11 @@
     <div class="footer">
         <h1 class="footer__text">Все права защищены</h1>
     </div>
-    <script src="hw-5.js"></script>
+    <script src="hw-1.js"></script>
     <script src="guessNumber.js"></script>
     <script src="simpleArithmetic.js"></script>
-
+    <script src="turnOverTextclass.js"></script>
+    <script src="simpleQuizGame.js"></script>
 </body>
 
 

@@ -76,6 +76,12 @@ if (numberArray.includes(userAnswer)) {
 
 
 //Task#8
+//Дана строка: 'abcdef'. Выведите в консоль 'fedcba'
+
+const text = 'abcdef';
+const splitText = text.split('');
+console.log(splitText);
+console.log(splitText.reverse().join(''));
 
 
 //Task#9
@@ -103,19 +109,18 @@ for (let j = 0; j < randomArray.length - 1; j++) {
 
 //Task#11
 
-const squredNum = () => {
-    const newArr = new Array();
 
-    for (let h = 0; h < 5; h++) {
-        let newNum = Math.floor(Math.random() * 10 + 1);
-        newArr.push(newNum);
-    }
+/**
+ * Создайте функцию, которая принимает на вход массив целых чисел,
+ *  а возвращает массив квадратов этих чисел.
+ */
 
-    console.log(newArr);
-
-    return newArr.map(item => item ** 2);
+function squredNum(arr) {
+    return arr.map(item => item ** 2);
 }
-console.log(squredNum());
+console.log(squredNum([1, 2, 3]));
+
+
 
 //Task#12
 
