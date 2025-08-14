@@ -1,4 +1,7 @@
 //Task#1
+/**
+ * Преобразовать строку 'js' в верхний регистр.
+ */
 
 let text = "js";
 let textAltered = text.toUpperCase();
