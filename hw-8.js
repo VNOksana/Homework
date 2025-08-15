@@ -20,7 +20,6 @@ const peopleList = [
  //  { name: 'Оксана', age: 47 }
  // ]
 
-
  //Task#2
 
 //  Реализуйте функцию filter, которая должна работать аналогично методу массива 
@@ -46,7 +45,7 @@ for (let index = 0; index < array.length; index++) {
     if (ruleFunction(array[index])) {
         result.push(array[index]);
     }
-    
+  
 }
 return result;
 }
@@ -78,10 +77,8 @@ const timerAlarm = () => {
         console.log("30 секунд прошло");
     }, 30000);
 
-
 }
 timerAlarm(30);
-
 
 //Task#4
 
@@ -107,7 +104,7 @@ delayForSecond(function () {
 //Посмотрите код. В нём допущена ошибка, и он выводит сообщения не в том порядке:
 
 // Функция delayForSecond через 1 секунду пишет в консоль 
-// «Прошла одна секунда», а затем вызывает переданный колбэк
+// «Прошла одна секунда», а затем вызывает переданный колбэк.
 function delayForSecond(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');

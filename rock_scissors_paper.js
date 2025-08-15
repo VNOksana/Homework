@@ -1,4 +1,5 @@
 
+
 function rockScissorsPaperGame() {
     
     const items = ['камень', 'ножницы', 'бумага'];
