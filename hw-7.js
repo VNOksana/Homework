@@ -143,11 +143,37 @@ console.log(myDate);
  */
 
 
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
-let newDate = new Date();
-let fullDate = "Дата: " + newDate.getDate() + " " + months[newDate.getMonth()] + " " + newDate.getFullYear() + " год " + " - это " + days[newDate.getDay()];
-//let fullTime = "Время: " + newDate.getHours() + ":" + newDate.getMinutes(2) + ":" + newDate.getSeconds(2);
-let fullTime = "Время: " + newDate.toLocaleTimeString('ru-RU');
-console.log(fullDate);
-console.log(fullTime);
+function formatDate(date) {
+    const formatterDate = new Intl.DateTimeFormat('ru-RU', {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+    });
+
+    const formatterTime = new Intl.DateTimeFormat('ru-RU', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+    });
+
+    const dateString = `Дата: ${formatterDate.format(date)}`;
+    const timeString = `Время: ${formatterTime.format(date)}`;
+    return `${dateString} ${timeString}`;
+}
+
+const currentDate = new Date();
+console.log(formatDate(currentDate));
+    const formatterTime = new Intl.DateTimeFormat('ru-RU', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+    });
+
+    const dateString = `Дата: ${formatterDate.format(date)}`;
+    const timeString = `Время: ${formatterTime.format(date)}`;
+    return `${dateString} ${timeString}`;
+}
+
+const currentDate = new Date();
+console.log(formatDate(currentDate));
