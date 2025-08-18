@@ -164,16 +164,3 @@ function formatDate(date) {
 
 const currentDate = new Date();
 console.log(formatDate(currentDate));
-    const formatterTime = new Intl.DateTimeFormat('ru-RU', {
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-    });
-
-    const dateString = `Дата: ${formatterDate.format(date)}`;
-    const timeString = `Время: ${formatterTime.format(date)}`;
-    return `${dateString} ${timeString}`;
-}
-
-const currentDate = new Date();
-console.log(formatDate(currentDate));
