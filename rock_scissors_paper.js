@@ -2,10 +2,7 @@
 
 function rockScissorsPaperGame() {
 
-    input = prompt(`Хотите сыграть в игру? (Do something?`);
-    if (input === null) {
-        return; //break out of the function early
-    }
+
     const items = ['камень', 'ножницы', 'бумага'];
     const getItems = () => Math.floor(Math.random() * items.length);
     let playerEnter;
@@ -48,10 +45,13 @@ function rockScissorsPaperGame() {
                 alert(`Выбор игрока: ${playerEnter}`);
                 alert("Player won!");
             }
+
+        } else if (playerEnter === null) {
+            alert("Пока!");
+            break;
         } else {
             alert("Wrong enter!");
         }
 
     } while (!regexp.test(playerEnter));
-
 }
