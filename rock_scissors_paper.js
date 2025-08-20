@@ -1,10 +1,10 @@
 
 
 function rockScissorsPaperGame() {
-    var input;
+
     input = prompt(`Хотите сыграть в игру? (Do something?`);
     if (input === null) {
-        return;//break out of the function early
+        return; //break out of the function early
     }
     const items = ['камень', 'ножницы', 'бумага'];
     const getItems = () => Math.floor(Math.random() * items.length);
