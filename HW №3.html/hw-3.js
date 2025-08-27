@@ -1,5 +1,5 @@
 //
-// Вопрос 1! //
+// Task#1! //
 let password = 'пароль';
 let askPassword = prompt('Введите пароль')
 
@@ -8,7 +8,7 @@ if (askPassword === password) {
 } else { alert('Пароль неверный') }
 
 
-// Вопрос 2 //
+// Task#2 //
 let c = 10;
 if (c > 0 && c < 10) {
     console.log('Верно');
@@ -17,7 +17,7 @@ if (c > 0 && c < 10) {
 }
 
 
-// Вопрос 3//
+// Task#3//
 let d = 64
 let e = 10
 
@@ -28,14 +28,14 @@ if (d > 100 || e > 100) {
 }
 
 
-// вопрос 4 //
+// Task#4 //
 let a = '2';
 let b = '3';
 // Код выше изменять менять нельзя. Чтобы решить задачу исправьте код ниже:
 alert(Number(a) + Number(b));
 
 
-// вопрос 5 //
+// Task#5 //
 let monthNumber = 12;
 switch (monthNumber) {
     case 1:
