@@ -1,18 +1,18 @@
-// Task 1
+// Task#1
 let a = 10
 alert(a)
 a = 20
 alert(a)
 
-// Task2
+// Task#2
 const iphone = 2007
 alert(iphone)
 
-// Task 3
+// Task#3
 const nameJS = "BrendanEich"
 alert(nameJS)
 
-// Task 4
+// Task#4
 let left = 10
 let right = 2
 
@@ -21,17 +21,17 @@ alert(left - right)
 alert(left * right)
 alert(left / right)
 
-// Task 5
+// Task#5
 let result = 2 ** 5
 alert(result)
 
-// Task 6
+// Task#6
 let z = 9
 let x = 2
 let divide = z % x
 alert(divide)
 
-// Task 7
+// Task#7
 let num = 1;
 num += 5;
 num -= 3;
@@ -41,18 +41,18 @@ num += 1;
 num -= 1;
 alert(num);
 
-// Task 8
+// Task#8
 let age = prompt('Сколько вам лет?')
 alert(age)
 
-// Task 9
+// Task#9
 const user = {
   name: 'Oksana',
   age: 27,
   isAdmin: true
 }
 
-// Task 10
+// Task#10
 let question = prompt('Как вас зовут?')
 alert(`Привет ${question}!`)
 
