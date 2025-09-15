@@ -20,6 +20,11 @@ button {
     cursor: pointer;
 }
 
+.main {
+    background-color: $colorBlack;
+    overflow: hidden;
+}
+
 .header {
     background: #E1FF8F;
     background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
@@ -327,6 +332,12 @@ button {
     display: none;
 }
 
+.minigame__content {
+    width: 600px;
+    padding: 48px;
+    box-sizing: border-box;
+}
+
 .footer {
     background: #BDED35;
     background-repeat: no-repeat;
@@ -589,13 +600,16 @@ button {
         line-height: 100%;
         letter-spacing: 0px;
         vertical-align: middle;
-        max-width: 233px;
+        max-width: 280px;
+        padding-bottom: 1px;
     }
 
     .games__sbtn {
         height: 55px;
         padding-left: 29px;
         padding-right: 29px;
+        width: 285px;
+        margin-top: 32px;
     }
 
     .footer {
@@ -607,6 +621,7 @@ button {
     .footer__text {
         font-size: 16px;
         line-height: 20px;
+        padding-top: 40px;
     }
 }
 

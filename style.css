@@ -349,20 +349,24 @@ button {
   0% {
     transform: translateX(40%);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
   }
+
   .header {
     background-position: 63px 94px, 156px 69px, 850px 568px, 800px 538px, right;
     padding-left: 24px;
     padding-right: 24px;
   }
+
   .games__title {
     font-family: Montserrat;
     font-weight: 700;
@@ -372,23 +376,28 @@ button {
     vertical-align: middle;
     padding-bottom: 48px;
   }
+
   .games__item {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
     align-items: stretch;
   }
+
   .games__content {
     padding-left: 29px;
     padding-right: 29px;
     padding-top: 29px;
   }
+
   .games__br {
     display: none;
   }
+
   .games__img {
     max-width: 100%;
   }
+
   .games__item-title {
     font-family: Montserrat;
     font-weight: 700;
@@ -397,6 +406,7 @@ button {
     letter-spacing: 0px;
     vertical-align: middle;
   }
+
   .games__item-text {
     font-family: Montserrat;
     font-weight: 400;
@@ -406,6 +416,7 @@ button {
     vertical-align: middle;
     max-width: 500px;
   }
+
   .games__sbtn {
     font-family: Montserrat;
     font-weight: 600;
@@ -416,21 +427,25 @@ button {
     margin-bottom: 32px;
     max-width: 285px;
   }
+
   .footer {
     background: #BDED35;
     background-repeat: no-repeat;
     height: 100px;
   }
+
   .footer__text {
     font-size: 16px;
     line-height: 20px;
   }
 }
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
+
   .header {
     background-image: url(img/Star2..png), url(img/Star3..png), url(img/Star4..png), url(img/Star5..png), url(img/mobiStarBig.png);
     background-position: 37px 97px, 91px 64px, 375px 580px, 345px 620px, right -10px;
@@ -439,12 +454,14 @@ button {
     flex-direction: column;
     height: 649px;
   }
+
   .header__content {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .header__house {
     font-weight: 700;
     font-size: 40px;
@@ -456,6 +473,7 @@ button {
     text-align: center;
     max-width: 296px;
   }
+
   .header__text {
     font-weight: 400;
     font-size: 16px;
@@ -467,20 +485,25 @@ button {
     margin-bottom: 36px;
     max-width: 296px;
   }
+
   .header__text_weight {
     font-weight: 600;
     font-size: 16px;
   }
+
   .sc {
     height: 51px;
     width: 100vw;
   }
+
   .scrollbar {
     height: 51px;
   }
+
   .scrollbar__text {
     font-size: 19px;
   }
+
   .button__go {
     background: #202027;
     border: 1px solid #202027;
@@ -498,26 +521,32 @@ button {
     margin-bottom: 131px;
     width: 285px;
   }
+
   .games__container {
     display: none;
   }
+
   .games__content {
     padding-left: 15px;
     margin-bottom: 32px;
     width: 284px;
   }
+
   .games__content--right {
     padding-right: 0px;
   }
+
   .games {
     padding-top: 0px;
   }
+
   .games__star--1,
   .games__star--2,
   .games__star--3,
   .games__star--4 {
     display: none;
   }
+
   .games__title {
     font-family: Montserrat;
     font-weight: 700;
@@ -527,17 +556,21 @@ button {
     vertical-align: middle;
     padding-bottom: 48px;
   }
+
   .games__item {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
   }
+
   .games__br {
     display: none;
   }
+
   .games__img {
     max-width: 100%;
   }
+
   .games__item-title {
     font-family: Montserrat;
     font-weight: 700;
@@ -547,6 +580,7 @@ button {
     vertical-align: middle;
     width: 284px;
   }
+
   .games__item-text {
     font-family: Montserrat;
     font-weight: 400;
@@ -555,27 +589,33 @@ button {
     letter-spacing: 0px;
     vertical-align: middle;
     max-width: 233px;
+    padding-bottom: 1px;
   }
+
   .games__sbtn {
     height: 55px;
     padding-left: 29px;
     padding-right: 29px;
   }
+
   .footer {
     background: #BDED35;
     background-repeat: no-repeat;
     height: 100px;
   }
+
   .footer__text {
     font-size: 16px;
     line-height: 20px;
   }
 }
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
+
   .header {
     background-image: url(img/Star2..png), url(img/Star3..png), url(img/Star4..png), url(img/Star5..png), url(img/mobiStarBig.png);
     background-position: 37px 97px, 91px 64px, 375px 580px, 345px 620px, right -10px;
@@ -584,12 +624,14 @@ button {
     flex-direction: column;
     height: 649px;
   }
+
   .header__content {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .header__house {
     font-weight: 700;
     font-size: 40px;
@@ -601,6 +643,7 @@ button {
     text-align: center;
     max-width: 296px;
   }
+
   .header__text {
     font-weight: 400;
     font-size: 16px;
@@ -612,20 +655,25 @@ button {
     margin-bottom: 36px;
     max-width: 296px;
   }
+
   .header__text_weight {
     font-weight: 600;
     font-size: 16px;
   }
+
   .sc {
     height: 51px;
     width: 100vw;
   }
+
   .scrollbar {
     height: 51px;
   }
+
   .scrollbar__text {
     font-size: 19px;
   }
+
   .button__go {
     background: #202027;
     border: 1px solid #202027;
@@ -643,21 +691,26 @@ button {
     margin-bottom: 131px;
     width: 285px;
   }
+
   .games__container {
     display: none;
   }
+
   .games__content--right {
     padding-right: 0px;
   }
+
   .games {
     padding-top: 0px;
   }
+
   .games__star--1,
   .games__star--2,
   .games__star--3,
   .games__star--4 {
     display: none;
   }
+
   .games__title {
     font-family: Montserrat;
     font-weight: 700;
@@ -667,17 +720,21 @@ button {
     vertical-align: middle;
     padding-bottom: 48px;
   }
+
   .games__item {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
   }
+
   .games__br {
     display: none;
   }
+
   .games__img {
     max-width: 100%;
   }
+
   .games__item-title {
     font-family: Montserrat;
     font-weight: 700;
@@ -687,6 +744,7 @@ button {
     vertical-align: middle;
     width: 284px;
   }
+
   .games__item-text {
     font-family: Montserrat;
     font-weight: 400;
@@ -694,34 +752,42 @@ button {
     line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
-    max-width: 233px;
+    max-width: 280px;
   }
+
   .games__sbtn {
     height: 55px;
     padding-left: 29px;
     padding-right: 29px;
     width: 262px;
+    margin-top: 32px;
   }
+
   .footer {
     background: #BDED35;
     background-repeat: no-repeat;
     height: 100px;
   }
+
   .footer__text {
     font-size: 16px;
     line-height: 20px;
+    padding-top: 40px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
   }
+
   .header {
     background-position: 63px 94px, 156px 69px, 850px 568px, 800px 538px, right;
     padding-left: 24px;
     padding-right: 24px;
   }
+
   .games__title {
     font-family: Montserrat;
     font-weight: 700;
@@ -731,18 +797,22 @@ button {
     vertical-align: middle;
     padding-bottom: 48px;
   }
+
   .games__item {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
     align-items: stretch;
   }
+
   .games__br {
     display: none;
   }
+
   .games__img {
     max-width: 100%;
   }
+
   .games__item-title {
     font-family: Montserrat;
     font-weight: 700;
@@ -752,6 +822,7 @@ button {
     vertical-align: middle;
     max-width: 233px;
   }
+
   .games__item-text {
     font-family: Montserrat;
     font-weight: 400;
@@ -761,6 +832,7 @@ button {
     vertical-align: middle;
     max-width: 500px;
   }
+
   .games__sbtn {
     font-family: Montserrat;
     font-weight: 600;
@@ -771,14 +843,17 @@ button {
     margin-bottom: 32px;
     max-width: 285px;
   }
+
   .footer {
     background: #BDED35;
     background-repeat: no-repeat;
     height: 100px;
   }
+
   .footer__text {
     font-size: 16px;
     line-height: 20px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

@@ -144,14 +144,21 @@
         line-height: 100%;
         letter-spacing: 0px;
         vertical-align: middle;
-        max-width: 233px;
+        max-width: 280px;
+        padding-bottom: 1px;
     }
 
     .games__sbtn {
         height: 55px;
         padding-left: 29px;
         padding-right: 29px;
-        width: 262px;
+        width: 285px;
+        margin-top: 32px;
+    }
+
+    .minigame__content {
+        width: 343px;
+        padding: 29px 29px 32px 29px;
     }
 
     .footer {
@@ -163,5 +170,6 @@
     .footer__text {
         font-size: 16px;
         line-height: 20px;
+        padding-top: 40px;
     }
 }
