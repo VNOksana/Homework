@@ -108,7 +108,7 @@
                 </a>
             </div>
         </section>
-        <section class="games center">
+        <section class="games games_section center">
             <img class="games__star games__star--1" src="img/Blackstar1.png" alt="blackstar" />
             <img class="games__star games__star--2" src="img/Blackstar2.png" alt="blackstar" />
             <img class="games__star games__star--3" src="img/Blackstar3.png" alt="blackstar" />
@@ -202,7 +202,7 @@
     <script src="./HW №7/simpleQuizGame.js"></script>
     <script src="./HW №8/rock_scissors_paper.js"></script>
     <script>
-        const mainEl = document.querySelector('.main');
+        const mainEl = document.querySelector('.games_section');
         const btnEl = document.querySelector('.games__sbtn_click');
         btnEl.addEventListener('click', () => {
             const r = Math.floor(Math.random() * 256);
