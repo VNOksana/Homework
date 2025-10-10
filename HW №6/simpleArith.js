@@ -1,9 +1,10 @@
 function simpleArithmetic() {
-   
+
+
     const randomNum = () => Math.floor(Math.random() * 10 + 1);
     const firstNum = randomNum();
     const secondNum = randomNum();
-    
+
     const getOperators = ["+", "-", "*", "/"];
     const getRandomOperator = () => Math.floor(Math.random() * 4);
     const getOperator = getOperators[getRandomOperator()];
@@ -20,15 +21,14 @@ function simpleArithmetic() {
         result = Math.floor(firstNum / secondNum);
     }
 
-    
     userQuestion = `Введите ответ на пример: ${firstNum} ${getOperator} ${secondNum}?`;
     userAnswer = Number(prompt(userQuestion));
-   
-    if (result === userAnswer) {
-        alert("Верный ответ!")
-    } else {
-        alert("Ошибка!");
-    }
 
-    
+    if (result === userAnswer) {
+        alert("Правильный ответ, молодец!")
+    }
+    else {
+        alert("Неправильно!Пока, приходи еще.");
+    }
 }
+
