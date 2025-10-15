@@ -1,34 +1,47 @@
 function simpleArithmetic() {
+    function generateRandomArrey() {
+        const operation = ["+", "-", "*", "/"];
 
+        function generateRandomExample() {
+            const firstNumb = Math.floor(Math.random() * 10) + 1;
+            const secondNumb = Math.floor(Math.random() * 10) + 1;
+            const randomAction = Math.floor(Math.random() * operation.length);
+            const randomOperation = operation[randomAction];
 
-    const randomNum = () => Math.floor(Math.random() * 10 + 1);
-    const firstNum = randomNum();
-    const secondNum = randomNum();
-
-    const getOperators = ["+", "-", "*", "/"];
-    const getRandomOperator = () => Math.floor(Math.random() * 4);
-    const getOperator = getOperators[getRandomOperator()];
-
-    let result = null;
-
-    if (getOperator === getOperators[0]) {
-        result = firstNum + secondNum;
-    } else if (getOperator === getOperators[1]) {
-        result = firstNum - secondNum;
-    } else if (getOperator === getOperators[2]) {
-        result = Math.floor(firstNum * secondNum);
-    } else {
-        result = Math.floor(firstNum / secondNum);
+            if (randomOperation === "/") {
+                const div = firstNumb * secondNumb;
+                return `${div} ${randomOperation} ${secondNumb}`;
+            }
+            return `${firstNumb} ${randomOperation} ${secondNumb}`;
+        }
+        function generateExample(count) {
+            const example = [];
+            for (let i = 0; i < count; i++) {
+                example.push(generateRandomExample());
+            }
+            return example;
+        }
+        return generateExample(4);
     }
 
-    userQuestion = `Введите ответ на пример: ${firstNum} ${getOperator} ${secondNum}?`;
-    userAnswer = Number(prompt(userQuestion));
+    const showExample = generateRandomArrey();
+    console.log(showExample);
 
-    if (result === userAnswer) {
-        alert("Правильный ответ, молодец!")
-    }
-    else {
-        alert("Неправильно!Пока, приходи еще.");
+    for (const exap of showExample) {
+        const userInput = prompt(`Реши пример ${exap}`);
+        const userAnswer = Number(userInput);
+        const rightAnswer = eval(exap);
+
+        if (userInput === null) {
+            alert('Пока, приходи ещё.');
+            break;
+        }
+        if (userAnswer !== rightAnswer) {
+            alert('Посчитал неправильно. Правильный ответ ' + rightAnswer)
+        }
+        if (!isNaN(userAnswer) && userAnswer === rightAnswer) {
+            alert("верный ответ, молодец!")
+        }
     }
 }
 
