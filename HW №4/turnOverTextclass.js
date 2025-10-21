@@ -1,18 +1,21 @@
 function turnOverText() {
-    let regexp = /^[a-zA-Zа-яА-Я]*$/;
+    // Регулярное выражение для проверки букв  
+    let regexp = /^[a-zA-Za-яА-Я]*$/;
     let userEnter;
 
     do {
         userEnter = prompt("Введите ваше слово!");
+
         if (userEnter === null) {
-            alert("Пока");
+            alert("До свидания!");
             break;
         }
-        if (regexp.test(userEnter)) {
-            alert(userEnter.split("").reverse().join(""));
-        } else {
-            alert("Вы ввели не слово введите, пожалуйста, слово");
-        }
-    } while (!regexp.test(userEnter) || userEnter === "");
 
+        if (regexp.test(userEnter)) {
+            // Переворачиваем слово  
+            alert("Перевернутое слово: " + userEnter.split("").reverse().join(""));
+        } else {
+            alert("Ошибка! Введите только буквы.");
+        }
+    } while (true);
 }
